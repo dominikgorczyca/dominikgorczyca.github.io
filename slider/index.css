@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
 }
 .carousel {
     text-align: center;
@@ -32,11 +31,11 @@ button {
     outline: none;
 }
 #carousel-button-prev {
-    right: 95%;
+    left: 3%;
     
 }
 #carousel-button-next {
-    left: 95%;
+    right: 3%;
 }
 button:hover, button:focus {
     background-color: #999999;
