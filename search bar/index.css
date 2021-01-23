@@ -2,14 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: white;
-
 }
 
 #container {
     min-height: 100vh;
-    height: 100%;
     margin: 0 auto;
-    /* background-color: royalblue; */
+    background-color: royalblue;
 }
 
 #search {
