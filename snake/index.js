@@ -4,7 +4,7 @@ const restart = document.getElementById("restart")
 let elements;
 let moveLimit = 1;
 let snake = [94,93,92];
-let direction = "right"; 
+let direction = ""; 
 let interval;
 
 
@@ -40,6 +40,8 @@ function move() {
         case "down":
             changeSnake(15);
             break;
+        default:
+            moveLimit = 1;
     }
 }
 
@@ -87,7 +89,12 @@ function apple() {
 
 function goodDirection(string) {
     //ignoring reverse button
-    if((string == "up" && direction == "down") || (string == "down" && direction == "up") ||           (string == "right" && direction == "left") || (string == "left" && direction == "right")) {
+    if(
+        (string == "up" && direction == "down") || 
+        (string == "down" && direction == "up") || 
+        (string == "right" && direction == "left") || 
+        (string == "left" && ( direction == "right" || direction == ""))) 
+    {
         return;
     }
     direction = string;
@@ -106,7 +113,7 @@ document.addEventListener("keydown", (e) => {
         goodDirection("left")
     } else if (e.code == "ArrowRight" || e.code == "KeyD") {
         goodDirection("right")
-    }
+    } 
 })
 restart.addEventListener("click", () => {
     clearInterval(interval);
@@ -115,7 +122,7 @@ restart.addEventListener("click", () => {
         v.classList.remove("apple")
     }
     snake = [94,93,92];
-    direction = "right"
+    direction = ""
     
     for(let [v, i] of snake.entries()) {
         elements[i].classList.add("snake");
