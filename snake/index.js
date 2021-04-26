@@ -28,6 +28,7 @@ function createGame() {
 
 function move() {
     switch(direction) {
+        
         case "right":
             changeSnake(1);
             break;
