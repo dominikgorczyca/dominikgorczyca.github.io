@@ -1,2 +1,2 @@
 # dominikgorczyca.github.io
-Portfolio is coming soon. 
+Portfolio is coming soon. I hope.
