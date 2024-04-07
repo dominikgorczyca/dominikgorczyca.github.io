@@ -1,0 +1,24 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+/node_modules
+/jspm_packages
+
+# Build files
+/dist
+/tmp
+/out-tsc
+
+# Environment variables
+.env
+
+# IDE files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
