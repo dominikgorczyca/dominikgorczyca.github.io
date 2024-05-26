@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
     return (
-        <div  className="border-b border-neutral-800 pb-20">
+        <div  className="border-b border-contrast pb-20">
             <motion.h2
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -12,7 +12,7 @@ function Contact() {
                 transition={{ duration: 1 }}
                 className="my-10 text-center text-4xl"
             >
-                Get in Touch
+                Contact
             </motion.h2>
             <div className="text-center tracking-tighter flex flex-col justify-center">
                 <motion.p 
