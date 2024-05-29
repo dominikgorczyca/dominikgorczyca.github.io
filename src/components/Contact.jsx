@@ -10,8 +10,7 @@ function Contact() {
                 viewport={{ once: true }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1 }}
-                className="my-10 text-center text-4xl"
-            >
+                className="my-10 text-center text-4xl">
                 Contact
             </motion.h2>
             <div className="text-center tracking-tighter flex flex-col justify-center">

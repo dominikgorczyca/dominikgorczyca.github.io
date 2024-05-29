@@ -25,7 +25,7 @@ function Hero() {
                             variants={container(0)}
                             initial="hidden"
                             animate="visible"
-                            className="pb-16 text-6xl lg:mt-16 lg:text-8xl font-light"
+                            className="pb-6 text-center lg:text-left text-6xl lg:mt-16 lg:text-8xl font-light"
                         >
                             Dominik Gorczyca
                         </motion.h1>
@@ -46,7 +46,7 @@ function Hero() {
                         </motion.p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/2 lg:p-8">
+                <div className="w-full lg:w-1/2 lg:p-8 self-center">
                     <div className="flex justify-center">
                         <motion.img 
                             initial={{ x: 100, opacity: 0 }}
