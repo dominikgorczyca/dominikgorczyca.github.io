@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   return (
-    <div className='border-b border-contrast pb-20 flex flex-col items-center'>
+    <div className='border-b border-contrast pb-20 flex flex-col items-center overflow-x-hidden pt-20 -mt-20' id='projects'>
         <motion.h2 
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -22,7 +22,7 @@ const iconVariants = (duration) => ({
 
 function Technologies() {
   return (
-    <div className='border-b border-contrast pb-20'>
+    <div className='border-b border-contrast pb-20 overflow-x-hidden pt-20 -mt-20' id='technologies'>
         <motion.h2 
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

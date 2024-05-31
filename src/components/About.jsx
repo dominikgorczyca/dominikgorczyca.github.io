@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 
 function About() {
     return (
-        <div className="border-b border-contrast pb-20">
+        <div className="border-b border-contrast pb-20 overflow-x-hidden pt-20 -mt-20 px-8" id="about">
             <h2 className="my-20 text-center text-4xl">
                 About <span className="text-accent"> Me</span>
             </h2>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap justify-between items-center gap-6 max-w-5xl m-auto">
                 <motion.div 
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     initial = {{ opacity: 0, x: -100 }}
                     transition = {{ duration: 1 }}
-                    className="w-full lg:w-1/2 lg:p-8"
+                    className="w-full lg:w-5/12 lg:p-8"
                     >
                     <div className="flex items-center justify-center">
                         <img
-                            className="rounded-2xl"
+                            className="rounded-2xl w-full max-w-xl"
                             src={aboutImg}
                             alt="About Me"
                         />
@@ -31,7 +31,7 @@ function About() {
                     initial = {{ opacity: 0, x: 100 }}
                     transition = {{ duration: 1 }}
                     className="w-full lg:w-1/2">
-                    <div className="flex justify-center lg:justify-start">
+                    <div className="flex justify-center lg:justify-start text-center lg:text-left">
                         <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
                     </div>
                 </motion.div>
