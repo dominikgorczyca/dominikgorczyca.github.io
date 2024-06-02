@@ -11,16 +11,16 @@ function Experience() {
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 1 }}
             className='my-20 text-center text-4xl'>Experience</motion.h2>
-        <div>
+        <div className='flex flex-col text-center sm:text-left items-center justify-center gap-12'>
             {EXPERIENCES.map((experience, index) => {
                 return (
-                    <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
+                    <div key={index} className='flex sm:gap-16 flex-col sm:flex-row'>
                         <motion.div 
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             initial={{ opacity: 0, x: -100 }}
                             transition={{ duration: 1 }}
-                            className="w-full lg:w-1/4">
+                            className="block  sm:w-40 sm:h-40" >
                             <p className='mb-2 text-sm text-gray'>{experience.year}</p>
                         </motion.div>
                         <motion.div 
@@ -35,6 +35,7 @@ function Experience() {
                             <p className='mb-4 text-gray'>
                                 {experience.description}
                             </p>
+                            <div className='flex flex-wrap justify-center sm:justify-start'>
                             {experience.technologies.map((tech, index) => {
                                 return (
                                     <span key={index} className='mr-2 mt-4 rounded bg-accent px-2 py-1 text-sm font-bold text-black'>
@@ -42,6 +43,7 @@ function Experience() {
                                     </span>
                                 )
                             })}
+                            </div>
                         </motion.div>
                     </div>
                 )
