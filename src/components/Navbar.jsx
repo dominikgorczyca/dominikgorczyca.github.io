@@ -4,6 +4,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
 
+import { LANGUAGES } from "../constants";
+import { i18n } from "../i18n";
+import { useTranslation } from "react-i18next";
+
 const itemVariants = {
     open: {
       opacity: 1,
@@ -12,6 +16,8 @@ const itemVariants = {
     },
     closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
 };
+
+const { i18n, t } = useTranslation();
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,19 +42,19 @@ const Navbar = () => {
                 <div className="flex gap-8 ">
                     <div className="items-center gap-4 hidden lg:flex">
                         <a href="#about" className="hover:text-contrast">
-                            About
+                            {t("about")}
                         </a>
                         <a href="#technologies" className="hover:text-contrast">
-                            Technologies
+                            {t("technologies")}
                         </a>
                         <a href="#experience" className="hover:text-contrast">
-                            Experience
+                            {t("experience")}
                         </a>
                         <a href="#projects" className="hover:text-contrast">
-                            Projects
+                            {t("projects")}
                         </a>
                         <a href="#contact" className="hover:text-contrast">
-                            Contact
+                            {t("contact")}
                         </a>
                     </div>
 
