@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function ScrollTopButton() {
     const [visible, setVisible] = useState(false);
-
+    
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 300) {

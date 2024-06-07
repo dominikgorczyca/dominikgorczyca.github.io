@@ -3,9 +3,7 @@ import logo from "../assets/logo.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
-
-import { LANGUAGES } from "../constants";
-import { i18n } from "../i18n";
+import { useCookies } from "react-cookie";
 import { useTranslation } from "react-i18next";
 
 const itemVariants = {
@@ -17,10 +15,17 @@ const itemVariants = {
     closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
 };
 
-const { i18n, t } = useTranslation();
-
 const Navbar = () => {
+    const { t, i18n } = useTranslation("navbar");
+    const [cookies, setCookie] = useCookies(["language"]);
     const [isOpen, setIsOpen] = useState(false);
+
+    console.log(cookies);
+
+    function changeLanguage(lang) {
+        i18n.changeLanguage(lang);
+        setCookie("language", lang, { path: "/" });
+    }
 
     useEffect(() => {
         if (isOpen) {
@@ -59,11 +64,10 @@ const Navbar = () => {
                     </div>
 
                     <div className=" flex items-center justify-center gap-4 text-2xl text-black">
-                        <button className="hidden lg:block">
+                        <button className="hidden lg:block border-main border" onClick={() => changeLanguage('pl')}>
                             <svg
                                 width="30"
                                 height="20"
-                                className="border-main border"
                             >
                                 <image
                                     xlinkHref="https://catamphetamine.gitlab.io/country-flag-icons/3x2/PL.svg"
@@ -71,11 +75,10 @@ const Navbar = () => {
                                 />
                             </svg>
                         </button>
-                        <button className="hidden lg:block">
+                        <button className="hidden lg:block border-main border" onClick={() => changeLanguage('en')}>
                             <svg
                                 width="30"
                                 height="20"
-                                className="border-main border"
                             >
                                 <image
                                     xlinkHref="https://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
@@ -128,31 +131,31 @@ const Navbar = () => {
                     href="#about"
                     className="hover:text-contrast p-4 border-b border-contrast"
                 >
-                    About
+                    {t("about")}
                 </motion.a>
                 <motion.a variants={itemVariants}
                     href="#technologies"
                     className="hover:text-contrast p-4 border-b border-contrast"
                 >
-                    Technologies
+                    {t("technologies")}
                 </motion.a>
                 <motion.a variants={itemVariants}
                     href="#experience"
                     className="hover:text-contrast p-4 border-b border-contrast"
                 >
-                    Experience
+                    {t("experience")}
                 </motion.a>
                 <motion.a variants={itemVariants}
                     href="#projects"
                     className="hover:text-contrast p-4 border-b border-contrast"
                 >
-                    Projects
+                    {t("projects")}
                 </motion.a>
                 <motion.a variants={itemVariants}
                     href="#contact"
                     className="hover:text-contrast p-4 border-b border-contrast"
                 >
-                    Contact
+                    {t("contact")}
                 </motion.a>
                 <motion.div variants={itemVariants} className="flex justify-center p-4 gap-4">
                     <button className="block">
@@ -164,6 +167,7 @@ const Navbar = () => {
                             <image
                                 xlinkHref="https://catamphetamine.gitlab.io/country-flag-icons/3x2/PL.svg"
                                 width="30"
+                                onClick={() => changeLanguage('pl')}
                             />
                         </svg>
                     </button>
@@ -176,6 +180,7 @@ const Navbar = () => {
                             <image
                                 xlinkHref="https://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
                                 width="30"
+                                onClick={() => changeLanguage('en')}
                             />
                         </svg>
                     </button>

@@ -6,8 +6,13 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollTopButton from "./components/ScrollTopButton";
+import i18n from "./i18n";
+import { useCookies } from "react-cookie";
 
 function App() {
+    const [cookies] = useCookies(["language"]);
+    i18n.changeLanguage(cookies.language);
+
     return (
         <div className="text-main antialiased w-full">
             <div className="fixed top-9 -z-10 h-full w-full">

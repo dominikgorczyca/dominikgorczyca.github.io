@@ -1,7 +1,7 @@
 import React from "react";
-import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/me.jpg";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -16,6 +16,8 @@ const container = (delay) => ({
 });
 
 function Hero() {
+    const { t } = useTranslation("hero");
+
     return (
         <div className="border-b border-contrast pb-20 pt-40 lg:mb-35 px-8 overflow-x-hidden -mt-20 ">
             <div className="flex flex-wrap justify-between gap-6 max-w-screen-xl m-auto">
@@ -42,7 +44,7 @@ function Hero() {
                             initial="hidden"
                             animate="visible"
                             className="my-2 max-w-xl py-6">
-                            {HERO_CONTENT}
+                            {t("description")}
                         </motion.p>
                     </div>
                 </div>

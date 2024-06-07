@@ -1,8 +1,11 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+    const { t } = useTranslation("contact");
+
     return (
         <div  className="border-b border-contrast pb-20 overflow-x-hidden pt-20 -mt-20" id="contact">
             <motion.h2
@@ -11,7 +14,7 @@ function Contact() {
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1 }}
                 className="my-10 text-center text-4xl">
-                Contact
+                {t("contact")}
             </motion.h2>
             <div className="text-center tracking-tighter flex flex-col justify-center">
                 <motion.p 
