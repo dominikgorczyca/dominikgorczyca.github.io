@@ -20,8 +20,6 @@ const Navbar = () => {
     const [cookies, setCookie] = useCookies(["language"]);
     const [isOpen, setIsOpen] = useState(false);
 
-    console.log(cookies);
-
     function changeLanguage(lang) {
         i18n.changeLanguage(lang);
         setCookie("language", lang, { path: "/" });

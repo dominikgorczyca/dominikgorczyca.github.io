@@ -8,10 +8,13 @@ import Contact from "./components/Contact";
 import ScrollTopButton from "./components/ScrollTopButton";
 import i18n from "./i18n";
 import { useCookies } from "react-cookie";
+import { useState } from "react";
 
 function App() {
     const [cookies] = useCookies(["language"]);
-    i18n.changeLanguage(cookies.language);
+    useState(() => {
+        i18n.changeLanguage(cookies.language);
+    }, []);
 
     return (
         <div className="text-main antialiased w-full">
@@ -28,6 +31,9 @@ function App() {
                 <Projects/>
                 <Contact/>
             </div>
+            <footer className="text-center py-4 bg-main text-accent">
+                <p>&copy; 2024. All rights reserved.</p>
+            </footer>
             <ScrollTopButton/>
         </div>
     );

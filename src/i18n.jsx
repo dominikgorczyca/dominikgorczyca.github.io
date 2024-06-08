@@ -67,6 +67,10 @@ i18n.use(initReactI18next).init({
             },
             contact: {
                 'contact': "Contact",
+                'email': 'Email Address',
+                'message': 'Message',
+                'submit': 'Submit',
+                'success': 'Email sent successfully!',
             },
             
         },
@@ -129,6 +133,10 @@ i18n.use(initReactI18next).init({
             },
             contact: {
                 'contact': "Kontakt",
+                'email': 'Adres Email',
+                'message': 'Wiadomość',
+                'submit': 'Wyślij',
+                'success': 'Email wysłany pomyślnie!',
             },
         }
     }
