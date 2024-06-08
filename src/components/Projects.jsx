@@ -32,14 +32,14 @@ function Projects() {
                             viewport={{ once: true }}
                             initial={{ opacity: 0, x: -100 }}
                             transition={{ duration: 1 }}
-                            className="rounded min-w-40 h-40"
+                            className="rounded min-w-40 w-40 h-40"
                             href={project.link}
                             target={project.link == "#" ? "" : "_blank"}
                         >
                             <motion.img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-full"
+                                className="w-full h-full object-contain shadow-lg"
                             />
                         </motion.a>
 

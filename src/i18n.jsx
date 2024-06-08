@@ -1,5 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import project1 from "./assets/projects/project-1.png";
 
 i18n.use(initReactI18next).init({
     lng: "en",
@@ -52,7 +53,7 @@ i18n.use(initReactI18next).init({
                 'projects': [
                     {
                         'title': "Portfolio Website",
-                        'image': "https://via.placeholder.com/150",
+                        'image': project1,
                         'link': '#',
                         'github': 'https://github.com/dominikgorczyca/dominikgorczyca.github.io',
                         'description': "A personal portfolio website showcasing projects, skills, and contact information.",
@@ -98,7 +99,7 @@ i18n.use(initReactI18next).init({
                 'experience': "Doświadczenie",
                 'experiences': [
                     {
-                        'position': "Full Stack Developer",
+                        'role': "Full Stack Developer",
                         'company': "Agencja KS",
                         'date': "Czerwiec 2022 - Obecnie",
                         'description': "Rozwijałem i utrzymywałem aplikacje internetowe wykorzystując JavaScript, PHP i MySQL. Współpracowałem przy znaczącym projekcie 'Easy Local', gdzie między innymi stworzyłem API używając Laravela, aby rozszerzyć funkcjonalności usługi poza główny projekt.",
@@ -118,7 +119,7 @@ i18n.use(initReactI18next).init({
                 'projects': [
                     {
                         'title': "Strona Portfolio",
-                        'image': "https://via.placeholder.com/150",
+                        'image': project1,
                         'link': '#',
                         'github': 'https://github.com/dominikgorczyca/dominikgorczyca.github.io',
                         'description': "Osobista strona portfolio prezentująca projekty, umiejętności i dane kontaktowe.",
