@@ -7,11 +7,14 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ScrollTopButton from "./components/ScrollTopButton";
 import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 import { useCookies } from "react-cookie";
 import { useState } from "react";
 
 function App() {
     const [cookies] = useCookies(["language"]);
+    const { t } = useTranslation("footer");
+
     useState(() => {
         i18n.changeLanguage(cookies.language);
     }, []);
@@ -32,7 +35,7 @@ function App() {
                 <Contact/>
             </div>
             <footer className="text-center py-4 bg-main text-accent">
-                <p>&copy; 2024. All rights reserved.</p>
+                <p>&copy; 2024. {t("all_rights_reserved")}</p>
             </footer>
             <ScrollTopButton/>
         </div>

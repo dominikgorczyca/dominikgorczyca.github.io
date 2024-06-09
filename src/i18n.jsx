@@ -18,7 +18,6 @@ i18n.use(initReactI18next).init({
                 contact: "Contact"
             },
             hero: {
-                // 
                 'description': 'I am a professional web developer with two years of experience, specializing in JavaScript, PHP, and MySQL. I have a strong interest in new technologies and am actively enhancing my skills in React, Node.js, and Express.'
             },
             about: {
@@ -73,7 +72,9 @@ i18n.use(initReactI18next).init({
                 'submit': 'Submit',
                 'success': 'Email sent successfully!',
             },
-            
+            footer: {
+                'all_rights_reserved': 'All rights reserved.'
+            }
         },
         pl: {  
             navbar: {
@@ -84,7 +85,6 @@ i18n.use(initReactI18next).init({
                 contact: "Kontakt"
             },
             hero: {
-                // 
                 'description': 'Jestem profesjonalnym deweloperem webowym z dwuletnim doświadczeniem, specjalizującym się w JavaScript, PHP i MySQL. Interesuję się nowymi technologiami i aktywnie rozwijam swoje umiejętności w React, Node.js i Express.'
             },
             about: {
@@ -139,6 +139,9 @@ i18n.use(initReactI18next).init({
                 'submit': 'Wyślij',
                 'success': 'Email wysłany pomyślnie!',
             },
+            footer: {
+                'all_rights_reserved': 'Wszelkie prawa zastrzeżone.'
+            }
         }
     }
 });
