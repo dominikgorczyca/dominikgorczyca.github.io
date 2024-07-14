@@ -1,11 +1,13 @@
 import React from "react";
-import { RiReactjsLine } from "react-icons/ri";
+import { RiReactjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb, SiExpress, SiJest } from "react-icons/si";
+import { SiMongodb, SiExpress, SiSass } from "react-icons/si";
 import { FaNodeJs, FaLaravel } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+// typescript, sass
 
 const iconVariants = (duration) => ({
     initial: { y: -10 },
@@ -45,14 +47,6 @@ function Technologies() {
                 className="flex flex-wrap items-center justify-center gap-4"
             >
                 <motion.div
-                    variants={iconVariants(6)}
-                    initial="initial"
-                    animate="animate"
-                    className="rounded-2xl border-4 border-main p-4"
-                >
-                    <RiReactjsLine alt="React" className="text-7xl text-cyan-400" />
-                </motion.div>
-                <motion.div
                     variants={iconVariants(4)}
                     initial="initial"
                     animate="animate"
@@ -61,20 +55,20 @@ function Technologies() {
                     <TbBrandNextjs alt="Next.js" className="text-7xl" />
                 </motion.div>
                 <motion.div
-                    variants={iconVariants(3)}
+                    variants={iconVariants(6)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-main p-4"
                 >
-                    <SiMongodb alt="MongoDB" className="text-7xl text-green-400" />
+                    <RiReactjsLine alt="React" className="text-7xl text-cyan-400" />
                 </motion.div>
                 <motion.div
-                    variants={iconVariants(2.5)}
+                    variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-main p-4"
                 >
-                    <SiExpress alt="Express" className="text-7xl text-black" />
+                    <BiLogoTypescript alt="Typescript" className="text-7xl" color="#3178C6" />
                 </motion.div>
                 <motion.div
                     variants={iconVariants(3.5)}
@@ -85,12 +79,28 @@ function Technologies() {
                     <FaNodeJs alt="Node.js" className="text-7xl text-green-500" />
                 </motion.div>
                 <motion.div
+                    variants={iconVariants(2.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-main p-4"
+                >
+                    <SiExpress alt="Express" className="text-7xl text-black" />
+                </motion.div>
+                <motion.div
                     variants={iconVariants(2)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-main p-4"
                 >
                     <FaLaravel alt="Laravel" className="text-7xl" color="#f55247" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(3)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-main p-4"
+                >
+                    <SiMongodb alt="MongoDB" className="text-7xl text-green-400" />
                 </motion.div>
                 <motion.div
                     variants={iconVariants(5)}
@@ -100,13 +110,31 @@ function Technologies() {
                 >
                     <BiLogoPostgresql alt="Postgresql" className="text-7xl text-sky-700" />
                 </motion.div>
+                {/* mysql */}
+                <motion.div
+                    variants={iconVariants(4)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-main p-4"
+                >
+                    <GrMysql alt="MySQL" className="text-7xl" color="#00618A" />
+                </motion.div>
+                {/* tailwind and sass */}
                 <motion.div
                     variants={iconVariants(3)}
                     initial="initial"
                     animate="animate"
                     className="rounded-2xl border-4 border-main p-4"
                 >
-                    <SiJest alt="Jest" className="text-7xl" color="#944058"  />
+                    <RiTailwindCssFill alt="Tailwind" className="text-7xl text-cyan-500" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(2)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-main p-4"
+                >
+                    <SiSass alt="Sass" className="text-7xl text-pink-400" />
                 </motion.div>
             </motion.div>
         </div>

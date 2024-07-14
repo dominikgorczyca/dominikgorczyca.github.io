@@ -1,5 +1,4 @@
 import React from "react";
-import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";

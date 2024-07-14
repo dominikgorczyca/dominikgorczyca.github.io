@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import project1 from "./assets/projects/project-1.png";
+import project2 from "./assets/projects/project-2.png";
 
 i18n.use(initReactI18next).init({
     lng: "en",
@@ -50,6 +51,21 @@ i18n.use(initReactI18next).init({
             projects: {
                 'title': "Projects",
                 'projects': [
+                    {
+                        'title': "Acme Dashboard",
+                        'image': project2,
+                        'link': 'https://nextjs-dashboard-ks-58604179.vercel.app/',
+                        'github': 'https://github.com/dominikgorczyca/nextjs-dashboard',
+                        'description': "A dashboard application written in Next.js deployed on Vercel.",
+                        'technologies': [
+                            'Next.js',
+                            'Vercel',
+                            'Tailwind',
+                            'Typescript',
+                            'PostgreSQL',
+                            'NextAuth',
+                        ]
+                    },
                     {
                         'title': "Portfolio Website",
                         'image': project1,
@@ -117,6 +133,21 @@ i18n.use(initReactI18next).init({
             projects: {
                 'title': "Projekty",
                 'projects': [
+                    {
+                        'title': "Acme Dahsboard",
+                        'image': project2,
+                        'link': 'https://nextjs-dashboard-ks-58604179.vercel.app/',
+                        'github': 'https://github.com/dominikgorczyca/nextjs-dashboard',
+                        'description': "Aplikacja dashboard napisana w Next.js wdrożona na Vercel.",
+                        'technologies': [
+                            'Next.js',
+                            'Vercel',
+                            'Tailwind',
+                            'Typescript',
+                            'PostgreSQL',
+                            'NextAuth',
+                        ]
+                    },
                     {
                         'title': "Strona Portfolio",
                         'image': project1,
