@@ -2,7 +2,7 @@
 
 [Read in English](README.md)
 
-Witamy w moim portfolio! Ten projekt prezentuje moją karierę, umiejętności i projekty. Jest zbudowany przy użyciu nowoczesnych narzędzi do tworzenia stron internetowych i hostowany na GitHub Pages.
+Witaj w moim portfolio! Ten projekt prezentuje moją karierę, umiejętności i projekty. Jest zbudowany przy użyciu nowoczesnych narzędzi do tworzenia stron internetowych i hostowany na GitHub Pages.
 
 ## Spis treści
 
