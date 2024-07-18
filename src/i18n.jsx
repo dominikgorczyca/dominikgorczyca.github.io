@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import project1 from "./assets/projects/project-1.png";
-import project2 from "./assets/projects/project-2.png";
+import project1 from "./assets/projects/project-1-1.png";
+import project2 from "./assets/projects/project-2-2.png";
 
 i18n.use(initReactI18next).init({
     lng: "en",
@@ -56,7 +56,8 @@ i18n.use(initReactI18next).init({
                         'image': project2,
                         'link': 'https://nextjs-dashboard-ks-58604179.vercel.app/',
                         'github': 'https://github.com/dominikgorczyca/nextjs-dashboard',
-                        'description': "A dashboard application written in Next.js deployed on Vercel.",
+                        'description': 
+                            'This Next.js dashboard application, deployed on Vercel, allows you to manage invoices for predefined customers with features to create, view, update, and delete invoices. It also provides dashboard insights. To log in, use the email <strong>user@nextmail.com</strong> and password <strong>123456</strong>.',
                         'technologies': [
                             'Next.js',
                             'Vercel',
@@ -71,7 +72,7 @@ i18n.use(initReactI18next).init({
                         'image': project1,
                         'link': '#',
                         'github': 'https://github.com/dominikgorczyca/dominikgorczyca.github.io',
-                        'description': "A personal portfolio website showcasing projects, skills, and contact information.",
+                        'description': "A simple personal portfolio website showcasing projects, skills, and contact information. Has language support for English and Polish.",
                         'technologies': [
                             'React',
                             'Tailwind',
@@ -138,7 +139,7 @@ i18n.use(initReactI18next).init({
                         'image': project2,
                         'link': 'https://nextjs-dashboard-ks-58604179.vercel.app/',
                         'github': 'https://github.com/dominikgorczyca/nextjs-dashboard',
-                        'description': "Aplikacja dashboard napisana w Next.js wdrożona na Vercel.",
+                        'description': 'Ta aplikacja dashboardowa w Next.js, wdrożona na Vercel, pozwala zarządzać fakturami dla zdefiniowanych klientów, oferując funkcje tworzenia, przeglądania, aktualizacji i usuwania faktur. Zapewnia także wgląd w dane na dashboardzie. Aby się zalogować, użyj emaila <strong>user@nextmail.com</strong> i hasła <strong>123456</strong>.',
                         'technologies': [
                             'Next.js',
                             'Vercel',
@@ -153,7 +154,7 @@ i18n.use(initReactI18next).init({
                         'image': project1,
                         'link': '#',
                         'github': 'https://github.com/dominikgorczyca/dominikgorczyca.github.io',
-                        'description': "Osobista strona portfolio prezentująca projekty, umiejętności i dane kontaktowe.",
+                        'description': "Prosta strona portfolio osobista prezentująca projekty, umiejętności i dane kontaktowe. Obsługuje języki angielski i polski.",
                         'technologies': [
                             'React',
                             'Tailwind',
